@@ -280,5 +280,15 @@
 
 <footer>© Justyna Lydia · <a href="https://justinalydia.com">justinalydia.com</a></footer>
 
+<script>
+  // Track email reach-outs as a GA4 event.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="mailto:"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event', 'email_click', { link_url: link.getAttribute('href') });
+    }
+  });
+</script>
+
 </body>
 </html>
