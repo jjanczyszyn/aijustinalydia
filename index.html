@@ -186,6 +186,68 @@
     margin-top: -10px;
   }
 
+  .writing {
+    padding: 48px 0 16px;
+  }
+  .writing ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .writing li {
+    border-top: 1px solid var(--rule);
+  }
+  .writing li:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+  .writing a.post {
+    display: block;
+    padding: 22px 4px;
+    transition: color 0.25s ease;
+  }
+  .writing a.post:hover .title {
+    color: var(--accent);
+  }
+  .writing .row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .writing .title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 400;
+    transition: color 0.25s ease;
+  }
+  .writing .date {
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .writing .desc {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 6px 0 0;
+  }
+  .writing .more {
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 24px;
+  }
+  .writing .more a {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    transition: color 0.25s ease, border-color 0.25s ease;
+  }
+  .writing .more a:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
   .contact {
     text-align: center;
     padding: 72px 28px 96px;
@@ -235,6 +297,8 @@
     .offerings .row { flex-direction: column; gap: 4px; padding: 18px 4px; }
     .offerings .price { text-align: left; }
     .offerings .desc { padding-bottom: 18px; }
+    .writing .row { flex-direction: column; gap: 4px; }
+    .writing .date { text-align: left; }
   }
 </style>
 </head>
@@ -290,6 +354,31 @@
         <p class="desc">Custom workflows for your business or your life.</p>
       </li>
     </ul>
+  </section>
+
+  <section class="writing wrap">
+    <p class="label">Writing</p>
+    <ul>
+      <li>
+        <a class="post" href="https://justinalydia.substack.com/p/i-kept-falling-into-facebook-videos">
+          <div class="row">
+            <span class="title">I kept falling into Facebook videos, so I made them disappear</span>
+            <span class="date">Aug 2026</span>
+          </div>
+          <p class="desc">A tiny open-source browser extension that removes video from the feed.</p>
+        </a>
+      </li>
+      <li>
+        <a class="post" href="https://justinalydia.substack.com/p/custom-domain-emails-in-gmail-for">
+          <div class="row">
+            <span class="title">Custom domain emails in Gmail for about $1 a month</span>
+            <span class="date">Jun 2026</span>
+          </div>
+          <p class="desc">I had Claude build it on AWS. No Google Workspace, no monthly fee.</p>
+        </a>
+      </li>
+    </ul>
+    <p class="more"><a href="https://justinalydia.substack.com">More on Substack</a></p>
   </section>
 
   <section class="contact">
