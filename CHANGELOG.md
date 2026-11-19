@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-18
+
+- Story section: mark the Mapbox and Wave roles as past roles, and describe
+  Wave as Francophone Africa's first unicorn.
+
 ## 2026-08-14
 
 - Add a **Writing** section to the homepage linking two Substack posts:
