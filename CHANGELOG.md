@@ -2,6 +2,7 @@
 
 ## 2026-11-18
 
+- Story section: list Wave before Mapbox, with a single "Formerly" leading.
 - Story section: mark the Mapbox and Wave roles as past roles, and describe
   Wave as Francophone Africa's first unicorn.
 
